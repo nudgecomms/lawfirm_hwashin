@@ -1,0 +1,38 @@
+.sub_06_sec_02 .step_number {
+  font-size: 0.7em;
+  font-weight: 400;
+  color: #aaa;
+}
+.sub_06_sec_02 .quform .quform-label-text, .sub_06_sec_02 .quform select, .sub_06_sec_02 .quform input, .sub_06_sec_02 .quform textarea, .sub_06_sec_02 .quform label {
+  font-size: 1rem !important;
+}
+@media (max-width: 767px) {
+  .sub_06_sec_02 .quform .quform-label-text, .sub_06_sec_02 .quform select, .sub_06_sec_02 .quform input, .sub_06_sec_02 .quform textarea, .sub_06_sec_02 .quform label {
+    font-size: 0.88rem !important;
+  }
+}
+.sub_06_sec_02 .quform .quform-label-text:focus:not(.privacy_wrapper input:focus), .sub_06_sec_02 .quform select:focus:not(.privacy_wrapper input:focus), .sub_06_sec_02 .quform input:focus:not(.privacy_wrapper input:focus), .sub_06_sec_02 .quform textarea:focus:not(.privacy_wrapper input:focus), .sub_06_sec_02 .quform label:focus:not(.privacy_wrapper input:focus) {
+  border-color: var(--e-global-color-5e04356);
+}
+.sub_06_sec_02 .quform .quform-spacer {
+  margin: 0;
+}
+.sub_06_sec_02 .quform .quform-spacer .quform-required {
+  font-size: 0.88rem;
+  color: var(--e-global-color-5e04356);
+}
+.sub_06_sec_02 .quform .situation .quform-field-radio:checked + label {
+  background-color: #000;
+  color: #fff;
+}
+.sub_06_sec_02 .quform .situation .quform-option-label {
+  margin: 0;
+  text-align: center;
+  flex: 1;
+}
+
+@media (max-width: 767px) {
+  .sub_06_sec_02 .quform .quform-option:nth-child(2) .quform-option-label {
+    border-width: 0 1px;
+  }
+}/*# sourceMappingURL=sub_07_inquiry.css.map */

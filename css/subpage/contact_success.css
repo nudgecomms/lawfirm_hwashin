@@ -1,0 +1,55 @@
+.info table {
+  border: none !important;
+  margin: 0;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  border-radius: 10px;
+}
+.info table tbody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info table tbody tr {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info table tbody tr td {
+  font-family: var(--e-global-typography-primary-font-family) !important;
+  font-weight: 700;
+  color: var(--e-global-color-5e04356) !important;
+  padding: 0 !important;
+  border: none !important;
+  font-size: 1.875rem !important;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .info table tbody tr td {
+    font-size: 1.5rem !important;
+  }
+}
+@media (max-width: 767px) {
+  .info table tbody tr td {
+    font-size: 1.25rem !important;
+  }
+}
+.info table tbody tr:hover td {
+  background-color: transparent;
+}
+.info_inquiry tr:nth-child(6)::after {
+  content: "/";
+  color: var(--e-global-color-997d2d6);
+  margin: 0 1rem;
+}
+.info_inquiry tr:not(.info_inquiry tr:nth-child(6), .info_inquiry tr:nth-child(8)) {
+  display: none;
+}
+.info_fast tr:nth-child(2), .info_fast tr:nth-child(odd), .info_fast tr:last-child {
+  display: none;
+}
+.info_fast tr:nth-child(4)::after {
+  content: "/";
+  color: var(--e-global-color-997d2d6);
+  margin: 0 1rem;
+}/*# sourceMappingURL=contact_success.css.map */

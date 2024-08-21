@@ -1,0 +1,134 @@
+@import '../_mixin', '../_variables';
+
+.page-id{
+    &-8748{
+        .header{
+            &_banner{display: none;}
+            &.elementor-sticky--effects{background-color: transparent!important;
+                .logo{display: none;
+                    &_white{display: block;}
+                }
+                .nav{
+                    .elementor-item{color: #fff!important;
+                        &:hover{color: $main_color_light !important;}
+                    }
+                }
+                .hamburger_btn{@include filter_white;}
+            }
+        }
+        .footer{margin-top: 0; border: none !important;}
+        .floating_bar{--width:calc(100% - 8px); opacity: 1; transform: translateY(0);}
+    }
+}
+
+.header{
+    position: absolute!important; background-color: transparent!important;
+    .logo{display: none;
+        &_white{display: block;}
+    }
+    &_banner{
+        .close_btn{cursor: pointer;}
+    }
+    &.elementor-sticky--effects{
+        position: fixed!important;
+        background-color: #000!important;
+        // background-color: #fff!important;
+        // .logo{display: block;
+        //     &_white{display: none;}
+        // }
+        // .nav{
+        //     .elementor-item{color: #000 !important; 
+        //         &.elementor-item-active, &:hover{color: $main_color_light!important;}
+        //     }
+        // }
+        // .hamburger_btn{@include filter_black;}
+    }
+    // .mb_nav .close_btn{@include filter_white}
+}
+.footer{
+    .info{color: #fff;}
+    .adress .e-n-accordion{
+        .e-n-accordion-item-title[aria-expanded="true"]{border-radius: 5px 5px 0 0;}
+        div[data-element_type="container"]{overflow: hidden;}
+    }
+}
+.floating_bar{
+    .sns_container{
+        .elementor-icon-box{
+            &-icon{position:relative; opacity: 1; transition: .3s;}
+            &-content{transition: .3s;}
+        }
+        .cls-1{fill: white;}
+        .icon{transform: translate(-50%, 1.25rem); opacity: 0; transition: .3s;
+            &::before, &:after{content: ""; display: block; @include size(2.5rem, 2.5rem); position: absolute; top: 0%; border-radius: 50%;}
+            &::before{left: -37px;}
+            &::after{right: -37px;}
+        }
+        &.tel .icon{
+            &::before{box-shadow: 20px 28px $main_color;}
+            &::after{box-shadow: -20px 28px $main_color;}
+        }
+        &.kakao .icon{
+            &::before{box-shadow: 20px 28px $main02_color;}
+                &::after{box-shadow: -20px 28px $main02_color;}
+        }
+        &.success{
+            .cls-1{fill: $grey_01;}
+            .icon{
+                &::before{box-shadow: 20px 28px $grey_03;}
+                &::after{box-shadow: -20px 28px $grey_03;}
+            }
+        }
+        &:hover{
+            .elementor-icon-box{
+                &-icon{position: absolute; opacity: 0; transition: .3s;}
+                &-content{text-align: center;}
+            }
+            .icon{opacity: 1; transform: translate(-50%, 0); transition: .3s;}
+        }
+    }
+    .quform{
+        .quform-spacer, .quform-element-submit, .quform-input{margin: 0; padding: 0;}
+        select{ color:$grey_01 ;}
+        select, input:not([type=checkbox]){font-size: 1rem; border: none!important;
+            &::placeholder {color:$grey_01 ;}
+            &:not(&[type=checkbox]){min-height: 42px;}
+        }
+        input{
+            &[type=checkbox]{@include border($color:#fff);
+                &:checked:after{background-color: #fff;}
+            }
+        }
+        .privacy_wrapper{color: #fff;
+            a{color: $grey_03;
+                &:hover{color: #fff;}
+            }
+        }
+        .quform-error-inner .quform-error-text{color: $grey_03;}
+    }
+}
+.quform{
+    input{
+        &[type=checkbox], &[type=checkbox]:checked:after{@include size(1rem, 1rem); border-radius: 50% !important;}
+        &[type=checkbox]{@include flex; overflow: visible; appearance: none; cursor: pointer; text-align: center;  @include border($color:$grey_02);
+            &:checked:after{content: ""; background: $main_color; display: flex; align-items: center; justify-content: center; line-height: 1.3em; background-color: $grey_02; @include size(0.6rem, 0.6rem);}
+        }
+    }
+    .privacy_wrapper{font-size: 1rem; margin-top: 0.625rem;
+        .quform-input-checkbox{margin: 0;}
+        .quform-option{display: flex; min-height: auto;}
+        a{font-size: 0.88rem; color: $grey_02;
+            &:hover{color:$main02_color;}
+        }
+    }
+    /* (error & success message) */
+    .quform-error-inner{background:none !important; border:none !important; padding:0 !important; font-size:14px;
+        .quform-error-text{color: $main_color;}
+    }
+    /* (error & success message end) */
+}
+@include mb{
+    .footer{
+        .elementor-icon-list-items{@include flex_column; gap: 0.625rem;}
+    }
+}

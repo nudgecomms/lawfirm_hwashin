@@ -1,0 +1,31 @@
+@import '../_mixin', '../_variables';
+
+.sub_05_sec_01{
+  .tab{
+    &_title .title{cursor: pointer;
+        &.on .elementor-widget-container{background-color: $main_color;
+            .elementor-heading-title{color: #fff;}
+        }
+    }
+    &_cont{opacity: 0;
+        &.on{opacity: 1; z-index: 1;}
+        .subway_warpper .elementor-heading-title {
+          @include flex_gap(0.625rem);  align-items: center;
+          .subway{background-color: #a71e31; border-radius: 50px; color: white; padding: 0.15rem 1rem; font-size: 1rem;}
+          .subway_02{background-color: #02a94e;}
+        }
+    }
+}
+}
+@include mb{
+  .sub_05_sec_01{
+    .tab{
+      &_cont{
+          .wrap_map{height: 250px!important; }
+      }
+  }
+    .subway_warpper .elementor-heading-title {
+      .subway{font-size: 0.88rem;}
+    }
+  }
+}

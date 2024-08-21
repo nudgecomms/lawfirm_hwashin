@@ -1,0 +1,59 @@
+@import "_variables.scss";
+
+//main03
+$radius:10px;
+//main03 end
+
+@mixin size($w, $h){width: $w; height: $h;}
+@mixin center($position:absolute, $left:50%, $top:50%, $translateX:-50%, $translateY:-50%){position: $position; left: $left; top: $top; transform: translate($translateX, $translateY);}
+
+@mixin flex($align:center, $justify:center){display: flex; align-items: $align; justify-content: $justify;}
+@mixin flex_gap($gap){display: flex; gap: $gap;}
+@mixin flex_column{display: flex; flex-direction: column;}
+@mixin grid($columns: null) {display: grid !important; grid-template-columns: $columns;}
+
+@mixin list($list-type){
+  ol,ul{li{list-style-type:'$list-type'; margin-left: 10px; padding-left: 5px;}}
+}
+
+@mixin font{font-family: var(--e-global-typography-primary-font-family);}
+@mixin icon_font($content, $weight:400){content: $content; font-family: "Font Awesome 5 Free"; font-weight: $weight;}
+
+@mixin border($width:1px,$color:#000){border: $width solid $color;}
+@mixin border_tnb($top:1px, $bottom:1px, $color:#000){border-width: $top 0 $bottom 0 !important; border-style: solid; border-color:$color;}
+
+@mixin ellipsis{display: -webkit-box; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal;}
+
+@mixin filter_white{filter:brightness(0) invert(1);}
+@mixin filter_black{filter: grayscale(100%) brightness(0);}
+@mixin filter_main{filter: invert(10%) sepia(70%) saturate(7294%) hue-rotate(353deg) brightness(89%) contrast(81%);}
+
+@mixin touch_snap($gap:1.25rem, $margin-b:0){display: flex !important; flex-wrap: nowrap !important; white-space: nowrap; overflow-x: auto; justify-content: flex-start !important; overflow-y: hidden; gap: $gap; margin-bottom: $margin-b;
+  &::-webkit-scrollbar{height: 0;}
+}
+
+@mixin h1{font-size: 4rem !important;
+  @include tb{font-size: 3rem !important;}
+  @include mb{font-size: 2rem !important;}
+}
+@mixin h2{font-size: 2.5rem !important;
+  @include tb{font-size: 1.875rem !important;}
+  @include mb{font-size: 1.5rem !important;}
+}
+@mixin h3{font-size: 1.875rem !important;
+  @include tb{font-size: 1.5rem !important;}
+  @include mb{font-size: 1.25rem !important;}
+}
+@mixin h4{font-size: 1.25rem !important;
+  @include max-tb{font-size: 1rem !important;}
+}
+@mixin h5{font-size: 1rem !important;
+  @include mb{font-size: 0.88rem !important;}
+}
+
+// media query
+@mixin pc {@media (min-width: #{$pc}) {@content;}}
+@mixin max-tb{@media (max-width: #{$pc - 1px}){@content;}}
+@mixin tb {@media (min-width: #{$tb}) and (max-width: #{$pc - 1px}) {@content;}}
+@mixin min-tb{@media (min-width: #{$tb}){@content;}}
+@mixin mb {@media (max-width: #{$tb - 1px}) {@content;}}

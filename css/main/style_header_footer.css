@@ -1,0 +1,230 @@
+.page-id-8748 .header_banner {
+  display: none;
+}
+.page-id-8748 .header.elementor-sticky--effects {
+  background-color: transparent !important;
+}
+.page-id-8748 .header.elementor-sticky--effects .logo {
+  display: none;
+}
+.page-id-8748 .header.elementor-sticky--effects .logo_white {
+  display: block;
+}
+.page-id-8748 .header.elementor-sticky--effects .nav .elementor-item {
+  color: #fff !important;
+}
+.page-id-8748 .header.elementor-sticky--effects .nav .elementor-item:hover {
+  color: var(--e-global-color-79ecc9f) !important;
+}
+.page-id-8748 .header.elementor-sticky--effects .hamburger_btn {
+  filter: brightness(0) invert(1);
+}
+.page-id-8748 .footer {
+  margin-top: 0;
+  border: none !important;
+}
+.page-id-8748 .floating_bar {
+  --width:calc(100% - 8px);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.header {
+  position: absolute !important;
+  background-color: transparent !important;
+}
+.header .logo {
+  display: none;
+}
+.header .logo_white {
+  display: block;
+}
+.header_banner .close_btn {
+  cursor: pointer;
+}
+.header.elementor-sticky--effects {
+  position: fixed !important;
+  background-color: #000 !important;
+}
+
+.footer .info {
+  color: #fff;
+}
+.footer .adress .e-n-accordion .e-n-accordion-item-title[aria-expanded=true] {
+  border-radius: 5px 5px 0 0;
+}
+.footer .adress .e-n-accordion div[data-element_type=container] {
+  overflow: hidden;
+}
+
+.floating_bar .sns_container .elementor-icon-box-icon {
+  position: relative;
+  opacity: 1;
+  transition: 0.3s;
+}
+.floating_bar .sns_container .elementor-icon-box-content {
+  transition: 0.3s;
+}
+.floating_bar .sns_container .cls-1 {
+  fill: white;
+}
+.floating_bar .sns_container .icon {
+  transform: translate(-50%, 1.25rem);
+  opacity: 0;
+  transition: 0.3s;
+}
+.floating_bar .sns_container .icon::before, .floating_bar .sns_container .icon:after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 0%;
+  border-radius: 50%;
+}
+.floating_bar .sns_container .icon::before {
+  left: -37px;
+}
+.floating_bar .sns_container .icon::after {
+  right: -37px;
+}
+.floating_bar .sns_container.tel .icon::before {
+  box-shadow: 20px 28px var(--e-global-color-5e04356);
+}
+.floating_bar .sns_container.tel .icon::after {
+  box-shadow: -20px 28px var(--e-global-color-5e04356);
+}
+.floating_bar .sns_container.kakao .icon::before {
+  box-shadow: 20px 28px var(--e-global-color-f6b3f5f);
+}
+.floating_bar .sns_container.kakao .icon::after {
+  box-shadow: -20px 28px var(--e-global-color-f6b3f5f);
+}
+.floating_bar .sns_container.success .cls-1 {
+  fill: var(--e-global-color-8316909);
+}
+.floating_bar .sns_container.success .icon::before {
+  box-shadow: 20px 28px var(--e-global-color-8a7d752);
+}
+.floating_bar .sns_container.success .icon::after {
+  box-shadow: -20px 28px var(--e-global-color-8a7d752);
+}
+.floating_bar .sns_container:hover .elementor-icon-box-icon {
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s;
+}
+.floating_bar .sns_container:hover .elementor-icon-box-content {
+  text-align: center;
+}
+.floating_bar .sns_container:hover .icon {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  transition: 0.3s;
+}
+.floating_bar .quform .quform-spacer, .floating_bar .quform .quform-element-submit, .floating_bar .quform .quform-input {
+  margin: 0;
+  padding: 0;
+}
+.floating_bar .quform select {
+  color: var(--e-global-color-8316909);
+}
+.floating_bar .quform select, .floating_bar .quform input:not([type=checkbox]) {
+  font-size: 1rem;
+  border: none !important;
+}
+.floating_bar .quform select::-moz-placeholder, .floating_bar .quform input:not([type=checkbox])::-moz-placeholder {
+  color: var(--e-global-color-8316909);
+}
+.floating_bar .quform select::placeholder, .floating_bar .quform input:not([type=checkbox])::placeholder {
+  color: var(--e-global-color-8316909);
+}
+.floating_bar .quform select:not(.floating_bar .quform select[type=checkbox], .floating_bar .quform input:not([type=checkbox])[type=checkbox]), .floating_bar .quform input:not([type=checkbox]):not(.floating_bar .quform select[type=checkbox], .floating_bar .quform input:not([type=checkbox])[type=checkbox]) {
+  min-height: 42px;
+}
+.floating_bar .quform input[type=checkbox] {
+  border: 1px solid #fff;
+}
+.floating_bar .quform input[type=checkbox]:checked:after {
+  background-color: #fff;
+}
+.floating_bar .quform .privacy_wrapper {
+  color: #fff;
+}
+.floating_bar .quform .privacy_wrapper a {
+  color: var(--e-global-color-8a7d752);
+}
+.floating_bar .quform .privacy_wrapper a:hover {
+  color: #fff;
+}
+.floating_bar .quform .quform-error-inner .quform-error-text {
+  color: var(--e-global-color-8a7d752);
+}
+
+.quform {
+  /* (error & success message) */
+  /* (error & success message end) */
+}
+.quform input[type=checkbox], .quform input[type=checkbox]:checked:after {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50% !important;
+}
+.quform input[type=checkbox] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid var(--e-global-color-997d2d6);
+}
+.quform input[type=checkbox]:checked:after {
+  content: "";
+  background: var(--e-global-color-5e04356);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.3em;
+  background-color: var(--e-global-color-997d2d6);
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.quform .privacy_wrapper {
+  font-size: 1rem;
+  margin-top: 0.625rem;
+}
+.quform .privacy_wrapper .quform-input-checkbox {
+  margin: 0;
+}
+.quform .privacy_wrapper .quform-option {
+  display: flex;
+  min-height: auto;
+}
+.quform .privacy_wrapper a {
+  font-size: 0.88rem;
+  color: var(--e-global-color-997d2d6);
+}
+.quform .privacy_wrapper a:hover {
+  color: var(--e-global-color-f6b3f5f);
+}
+.quform .quform-error-inner {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  font-size: 14px;
+}
+.quform .quform-error-inner .quform-error-text {
+  color: var(--e-global-color-5e04356);
+}
+
+@media (max-width: 767px) {
+  .footer .elementor-icon-list-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+}/*# sourceMappingURL=style_header_footer.css.map */

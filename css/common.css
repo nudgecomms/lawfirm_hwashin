@@ -1,0 +1,269 @@
+@charset "UTF-8";
+* {
+  word-break: keep-all;
+  scroll-behavior: smooth;
+  outline: none;
+}
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+::-moz-selection {
+  background: var(--e-global-color-8316909);
+  color: #fff;
+}
+
+::selection {
+  background: var(--e-global-color-8316909);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--e-global-color-5e04356);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+.elementor-button .elementor-align-icon-right {
+  display: flex;
+}
+
+.elementor-icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.elementor-item:focus {
+  background: none !important;
+}
+
+ul, ol {
+  padding: 0;
+}
+ul li, ol li {
+  list-style: none;
+  padding: 0;
+}
+ul.hyphen_list ol li, ul.hyphen_list ul li, ol.hyphen_list ol li, ol.hyphen_list ul li {
+  list-style-type: "$list-type";
+  margin-left: 10px;
+  padding-left: 5px;
+}
+
+/* -lottie- */
+.elementor-widget-lottie .e-lottie__caption {
+  display: none;
+}
+
+/* -lottie end- */
+/* -color class- */
+.filter_white {
+  filter: brightness(0) invert(1);
+}
+
+.filter_black {
+  filter: grayscale(100%) brightness(0);
+}
+
+.filter_logo {
+  filter: invert(10%) sepia(70%) saturate(7294%) hue-rotate(353deg) brightness(89%) contrast(81%);
+}
+
+.font_main_color {
+  color: var(--e-global-color-5e04356);
+}
+
+.font_main01_color {
+  color: var(--e-global-color-6f2087f);
+}
+
+.font_main04_color {
+  color: var(--e-global-color-79ecc9f);
+}
+
+/* -color class end- */
+/* -br- */
+@media (min-width: 1024px) {
+  .br_pc__none {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .br_tb__none {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .br_mb__none {
+    display: none;
+  }
+}
+/* -br- */
+/* -cursor/floating- */
+.cursor {
+  cursor: pointer;
+}
+
+.floating_bar, .floating_01, .floating_02 {
+  opacity: 0;
+}
+.floating_bar .elementor-icon, .floating_01 .elementor-icon, .floating_02 .elementor-icon {
+  cursor: pointer;
+}
+
+/* -cursor/floating btn end- */
+.full_w {
+  width: 100% !important;
+  left: 0 !important;
+}
+
+.root_daum_roughmap_landing {
+  width: 100% !important;
+}
+
+/* -kBoard- */
+.note-modal.open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#kboard-default-editor .kboard-attr-media .attr-value a {
+  color: var(--e-global-color-997d2d6);
+  font-size: 14px;
+}
+
+.kboard-default-new-notify {
+  background: var(--e-global-color-5e04356) !important;
+}
+
+/* -kBoard end- */
+/* -quform edit form- */
+.quform-edit-form {
+  display: none;
+}
+
+/* -quform edit form end- */
+/* -nav popup close- */
+.elementor-popup-modal .dialog-close-button {
+  content: url(/wp-content/uploads/2023/12/close_btn__round.svg);
+  width: 20px;
+  height: 20px;
+}
+
+/* -nav popup close end- */
+#main04_more_btn {
+  width: 100% !important;
+}
+
+/* ●sub 공통● */
+/* ○mainBanner○ */
+.sub_mainbanner #home a:before {
+  content: "\f015";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.quform .quform-spacer .quform-option-label {
+  flex: 1;
+}
+.quform input[type=checkbox], .quform input[type=checkbox]:checked:after {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50% !important;
+}
+.quform input[type=checkbox] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid var(--e-global-color-997d2d6);
+}
+.quform input[type=checkbox]:checked:after {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.3em;
+  background-color: var(--e-global-color-5e04356);
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.quform .privacy_wrapper {
+  font-size: 1rem;
+  margin-top: 0.625rem;
+}
+.quform .privacy_wrapper .quform-input-checkbox {
+  margin: 0;
+}
+.quform .privacy_wrapper .quform-option {
+  display: flex;
+  min-height: auto;
+}
+.quform .privacy_wrapper a {
+  font-size: 0.88rem;
+  color: var(--e-global-color-997d2d6);
+}
+.quform .privacy_wrapper a:hover {
+  color: var(--e-global-color-5e04356);
+}
+.quform .quform-error-inner {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  font-size: 14px;
+}
+.quform .quform-error-inner .quform-error-text {
+  color: var(--e-global-color-5e04356);
+}
+.quform .quform-success-message {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #fff;
+  font-size: 1rem;
+}
+.quform .quform-success-message .quform-success-message-icon {
+  left: 0;
+}
+
+/* ○mainBanner end○ */
+/* ●sub 공통 end● */
+@media (max-width: 767px) {
+  .table {
+    overflow-x: auto;
+  }
+  #kboard-default-list colgroup {
+    display: none;
+  }
+  .e-n-tabs-mobile .e-n-tabs-heading {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start !important;
+    overflow-y: hidden;
+    gap: 1.25rem;
+    margin-bottom: 0;
+    gap: 10px !important;
+  }
+  .e-n-tabs-mobile .e-n-tabs-heading::-webkit-scrollbar {
+    height: 0;
+  }
+}/*# sourceMappingURL=common.css.map */

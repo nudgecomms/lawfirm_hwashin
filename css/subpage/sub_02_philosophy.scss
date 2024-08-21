@@ -1,0 +1,9 @@
+@import '../_mixin', '../_variables';
+
+.sub_02_sec_03{
+    .warpper{
+        &:hover{
+            .elementor-widget-icon, .elementor-widget-heading, .elementor-widget-image-box{@include filter_white;}
+        }
+    }
+}

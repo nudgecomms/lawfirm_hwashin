@@ -1,0 +1,24 @@
+@import '../_mixin', '../_variables';
+
+.sub_06_sec_02{
+  .step{
+    &_number{font:{size: 0.7em; weight: 400;}; color: #aaa;}
+  }
+  .quform{
+    .quform-label-text, select, input, textarea, label{@include h5;
+      &:focus:not(.privacy_wrapper input:focus){border-color: $main_color;}
+    }
+    .quform-spacer{margin:0;
+      .quform-required{font-size:0.88rem; color: $main_color;}
+    }
+    .situation{
+      .quform-field-radio:checked+label{background-color: #000; color: #fff;}
+      .quform-option-label{margin: 0; text-align: center; flex: 1;}
+    }
+  }
+}
+@include mb{
+  .sub_06_sec_02 .quform{
+    .quform-option:nth-child(2) .quform-option-label{border-width: 0 1px;}
+  }
+}

@@ -1,0 +1,101 @@
+@import '_mixin', '_variables';
+
+*{word-break:keep-all; scroll-behavior: smooth; outline:none;}
+img{image-rendering: -webkit-optimize-contrast;}
+::selection{background: $grey_01; color: #fff;}
+::-webkit-scrollbar {width: 8px;}
+::-webkit-scrollbar-track {background: #222;}
+::-webkit-scrollbar-thumb {background: $main_color;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+.elementor-button .elementor-align-icon-right{display:flex;}
+.elementor-icon-wrapper{display:flex; align-items:center;}
+.elementor-item:focus{background:none !important;}
+// list style
+ul, ol{padding:0;
+	li{list-style:none; padding:0;}
+	&.hyphen_list{@include list('\2d');}
+}
+// list style end
+/* -lottie- */
+.elementor-widget-lottie .e-lottie__caption{display:none;}
+/* -lottie end- */
+/* -color class- */
+.filter_white{filter:brightness(0) invert(1);}
+.filter_black{filter: grayscale(100%) brightness(0);}
+.filter_logo{filter: invert(10%) sepia(70%) saturate(7294%) hue-rotate(353deg) brightness(89%) contrast(81%);}
+.font_main_color{color: $main_color;}
+.font_main01_color{color:$main01_color;}
+.font_main04_color{color:$main04_color;}
+/* -color class end- */
+/* -br- */
+@include pc{.br_pc__none{display:none;}}
+@include tb{.br_tb__none{display:none;}}
+@include mb{.br_mb__none{display:none;}}
+/* -br- */
+/* -cursor/floating- */
+.cursor{cursor: pointer;}
+.floating_bar,.floating_01,.floating_02{opacity:0;
+	.elementor-icon{cursor:pointer;}
+}
+/* -cursor/floating btn end- */
+// header
+.full_w{width: 100% !important; left: 0 !important;}
+// header end
+// kakao map
+.root_daum_roughmap_landing{width: 100%!important;}
+// kakao map end
+/* -kBoard- */
+// (modal)
+.note-modal.open{@include flex(center, center);}
+// (kboard media 추가)
+#kboard-default-editor .kboard-attr-media .attr-value a{color: $grey_02; font-size: 14px;}
+// (new)
+.kboard-default-new-notify{background:$main_color !important;}
+/* -kBoard end- */
+/* -quform edit form- */
+.quform-edit-form{display:none;}
+/* -quform edit form end- */
+/* -nav popup close- */
+.elementor-popup-modal .dialog-close-button {content: url(/wp-content/uploads/2023/12/close_btn__round.svg); @include size(20px, 20px);}
+/* -nav popup close end- */
+#main04_more_btn{width: 100%!important;}
+/* ●sub 공통● */
+/* ○mainBanner○ */
+.sub_mainbanner{
+  #home a:before{@include icon_font("\f015", 900);}
+}
+.quform{
+	.quform-spacer .quform-option-label{flex: 1;}
+	input{
+			&[type=checkbox], &[type=checkbox]:checked:after{@include size(1rem, 1rem); border-radius: 50% !important;}
+			&[type=checkbox]{@include flex; overflow: visible; appearance: none; cursor: pointer; text-align: center;  @include border($color:$grey_02);
+					&:checked:after{content: "";  display: flex; align-items: center; justify-content: center; line-height: 1.3em; background-color: $main_color; @include size(0.6rem, 0.6rem);}
+			}
+	}
+	.privacy_wrapper{font-size: 1rem; margin-top: 0.625rem;
+			.quform-input-checkbox{margin: 0;}
+			.quform-option{display: flex; min-height: auto;}
+			a{font-size: 0.88rem; color: $grey_02;
+					&:hover{color:$main_color;}
+			}
+	}
+	.quform-error-inner{background:none !important; border:none !important; padding:0 !important; font-size:14px;
+			.quform-error-text{color: $main_color;}
+	}
+	.quform-success-message{background:none; border:none; padding:0; color:#fff; font-size: 1rem;
+		.quform-success-message-icon{left:0;}
+	}
+}
+/* ○mainBanner end○ */
+/* ●sub 공통 end● */
+@include mb{
+	// mobile table x scroll
+	.table{overflow-x: auto;}
+	// mobile table x scroll end
+	// kboard default list 
+	#kboard-default-list colgroup{display: none;}
+	// kboard default list end 
+	// ●mobile tab●  
+	.e-n-tabs-mobile .e-n-tabs-heading{@include touch_snap; gap: 10px !important;}
+	// ●mobile tab end●
+}
